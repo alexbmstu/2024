@@ -5,10 +5,6 @@
 | [Алексей Попов](mailto:alexpopov@bmstu.ru), <br> *МГТУ им. Н.Э.Баумана*        | [Станислав  Ибрагимов](mailto:ibragimov@bmstu.ru)  <br>  *МГТУ им. Н.Э.Баумана*   | [Егор Дубровин](mailto:dubrovin.en@ya.ru)  <br>  *МГТУ им. Н.Э.Баумана*                                    | [Ли Цзяцзянь](mailto:dreki.li@mail.ru)  <br>  *МГТУ им. Н.Э.Баумана*                                         |
 | <img src="assets/max_kalitvencev.png" class="smallPic">                        | <img src="assets/PXL_20220430_152105151.MP-modified.png" class="smallPic">        | <img src="" class="smallPic">                                                                              | <img src="assets/t_kurokhtin.png" class="smallPic">                                                          |
 | [Максим Калитвенцев](mailto:alexpopov@bmstu.ru), <br> *МГТУ им. Н.Э.Баумана*   | [Михаил Гейне](mailto:mike.geine@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*         | [Гор Парамазян](mailto:anon@anon.ru)  <br>  *МГТУ им. Н.Э.Баумана*                                         | [Тимофей Курохтин](mailto:anon@anon.ru)<br>*МГТУ им. Н.Э.Баумана*                                            |
-<!-- | <img src="assets/t_kurokhtin.png" class="smallPic">                            | <img src="assets/anastasia_popova.png" class="smallPic">                          | <img src="assets/aleksandra_popova.png" class="smallPic">                                                  | <img src="assets/892_oooo.plus.png" class="smallPic">                                                        | -->
-<!-- | [Тимофей Курохтин](mailto:anon@anon.ru)<br>*МГТУ им. Н.Э.Баумана*              | [Анастасия Попова](mailto:anon@anon.ru)<br>*МГК им. П.И.Чайковского*              | [Алекандра Попова](mailto:anon@anon.ru) <br>*Высшая школа музыки<br>г.Детмольд; RWTH,<br>г.Аахен,Германия* | [Константин Горбунов](mailto:anon@anon.ru)  <br>*НИИ Системной биологии<br>и медицины<br>Роспотребнадзора*   | -->
-
-
 
 ---
 	
