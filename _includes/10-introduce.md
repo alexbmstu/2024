@@ -2133,7 +2133,7 @@ FOR dept IN departments\
   FILTER dept.department\_name == "Computer Science"\
   FOR prof IN professors\
     FILTER prof.department\_id == dept.department\_id\
-    RETURN prof.name\
+    RETURN prof.name
 
 
 **Объяснение:**
@@ -2216,7 +2216,7 @@ FOR enr IN enrollments\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия книг, которые
+Получить в хост-подсистеме и выдать на экран названия книг, которые
 взял студент с именем Алексей Иванов (передается в запросе из хост
 системы)?
 
@@ -2263,7 +2263,7 @@ FOR borrower IN borrowers\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия клубов, в
+Получить в хост-подсистеме и выдать на экран названия клубов, в
 которых состоит студент с именем Елена Смирнова (передается в запросе из
 хост-подсистемы)?
 
@@ -2276,7 +2276,7 @@ FOR student IN students\
   FOR clubId IN student.club\_ids\
     FOR club IN clubs\
       FILTER club.club\_id == clubId\
-      RETURN DISTINCT club.club\_name\
+      RETURN DISTINCT club.club\_name
 
 
 **Объяснение:**
@@ -2313,7 +2313,7 @@ FOR student IN students\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия всех курсов,
+Получить в хост-подсистеме и выдать на экран названия всех курсов,
 которые принадлежат к кафедре Mathematics (передается в запросе из хост
 системы)?
 
@@ -2419,7 +2419,7 @@ FOR student IN students\
   FOR att IN attendance\
     FILTER att.student\_id == student.student\_id AND att.status ==
 "Absent"\
-    RETURN att.date\
+    RETURN att.date
 
 
 **Объяснение:**
@@ -2694,7 +2694,7 @@ FOR student IN students\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия проектов, в
+Получить в хост-подсистеме и выдать на экран названия проектов, в
 которых участвует студент с именем Павел Морозов (передается в запросе
 из хост-подсистемы)?
 
@@ -2740,7 +2740,7 @@ FOR student IN students\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия
+Получить в хост-подсистеме и выдать на экран названия
 университетов, предлагающих программы обмена в стране, откуда родом
 студент с именем Карина Васильева (передается в запросе из хост
 системы)?
@@ -3016,7 +3016,7 @@ FOR att IN attendance\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия
+Получить в хост-подсистеме и выдать на экран названия
 онлайн-курсов, которые может пройти студент с именем Игорь Новиков
 (передается в запросе из хост-подсистемы), если он уже прошёл все
 необходимые курсы?
@@ -3072,7 +3072,7 @@ FOR student IN students\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия вакансий, для
+Получить в хост-подсистеме и выдать на экран названия вакансий, для
 которых студент с именем Антон Белый (передается в запросе из хост
 системы) обладает всеми необходимыми навыками?
 
@@ -3177,7 +3177,7 @@ FOR student IN students\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия компаний,
+Получить в хост-подсистеме и выдать на экран названия компаний,
 расположенных в том же городе, где живёт студент Сергей Крылов
 (передается в запросе из хост-подсистемы)?
 
@@ -3189,7 +3189,7 @@ FOR student IN students\
   FILTER student.name == "Сергей Крылов"\
   FOR company IN companies\
     FILTER company.city == student.city\
-    RETURN company.name\
+    RETURN company.name
 
 **Объяснение:**
 
@@ -3235,7 +3235,7 @@ FOR student IN students\
   RETURN {\
     "name": student.name,\
     "average\_score": AVERAGE(scores)\
-  }\
+  }
 
 **Объяснение:**
 
@@ -3273,7 +3273,7 @@ FOR student IN students\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия общежитий, в
+Получить в хост-подсистеме и выдать на экран названия общежитий, в
 которые подал заявки студент Денис Фролов (передается в запросе из хост
 системы), и статус каждой заявки?
 
@@ -3287,7 +3287,7 @@ FOR student IN students\
     RETURN {\
       "dormitory": application.dormitory,\
       "status": application.status\
-    }\
+    }
 
 **Объяснение:**
 
@@ -3338,7 +3338,7 @@ FOR student IN students\
     RETURN {\
       "name": student.name,\
       "active\_plan": plan.plan\_type\
-    }\
+    }
 
 **Объяснение:**
 
@@ -3375,7 +3375,7 @@ FOR student IN students\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия внеклассных
+Получить в хост-подсистеме и выдать на экран названия внеклассных
 мероприятий, в которых не участвует студент Ирина Зайцева (передается в
 запросе из хост-подсистемы)?
 
@@ -3386,7 +3386,7 @@ FOR student IN students\
   FILTER student.name == "Ирина Зайцева"\
   FOR activity IN extracurricular\_activities\
     FILTER NOT (student.student\_id IN activity.participants)\
-    RETURN activity.name\
+    RETURN activity.name
 
 **Объяснение:**
 
@@ -3436,7 +3436,7 @@ FOR student IN students\
   RETURN {\
     "name": student.name,\
     "is\_subscribed": subscription != null\
-  }\
+  }
 
 **Объяснение:**
 
@@ -3490,7 +3490,7 @@ FOR student IN students\
   FOR course IN language\_courses\
     FILTER course.language == student.preferred\_language AND
 course.level == "Beginner"\
-    RETURN course\
+    RETURN course
 
 **Объяснение:**
 
@@ -3524,7 +3524,7 @@ course.level == "Beginner".
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия мероприятий
+Получить в хост-подсистеме и выдать на экран названия мероприятий
 типа Birthday Party, которые совпадают с днём рождения студента Владимир
 Соловьёв (передается в запросе из хост-подсистемы)?
 
@@ -3537,7 +3537,7 @@ FOR student IN students\
   FOR event IN events\
     FILTER event.type == "Birthday Party" \
       AND DATE\_FORMAT(event.date, "%m-%d") == birthDate\
-    RETURN event.name\
+    RETURN event.name
 
 **Объяснение:**
 
@@ -3591,7 +3591,7 @@ FOR student IN students\
   RETURN {\
     "name": student.name,\
     "total\_fees": totalFees\
-  }\
+  }
 
 **Объяснение:**
 
@@ -3645,7 +3645,7 @@ FOR student IN students\
       "program\_id": program.program\_id,\
       "country": program.country,\
       "duration\_months": program.duration\_months\
-    }\
+    }
 
 **Объяснение:**
 
@@ -3684,7 +3684,7 @@ FOR student IN students\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия учебных
+Получить в хост-подсистеме и выдать на экран названия учебных
 материалов, доступных для студентов второго курса, таких как Елена
 Гордеева (передается в запросе из хост-подсистемы)?
 
@@ -3696,7 +3696,7 @@ FOR student IN students\
 2\
   FOR material IN course\_materials\
     FILTER material.year\_available &lt;= student.year\_of\_study\
-    RETURN material.title\
+    RETURN material.title
 
 **Объяснение:**
 
@@ -3744,7 +3744,7 @@ FOR student IN students\
     FILTER notification.recipient\_email == student.email\
     SORT notification.sent\_date DESC\
     LIMIT 5\
-    RETURN notification.message\
+    RETURN notification.message
 
 **Объяснение:**
 
@@ -3796,7 +3796,7 @@ FOR student IN students\
   RETURN {\
     "name": student.name,\
     "total\_volunteer\_hours": totalHours\
-  }\
+  }
 
 **Объяснение:**
 
@@ -3845,7 +3845,7 @@ FOR student IN students\
   FOR cafeteria IN cafeterias\
     FILTER LENGTH(INTERSECTION(student.preferences, cafeteria.cuisines))
 &gt; 0\
-    RETURN cafeteria.name\
+    RETURN cafeteria.name
 
 **Объяснение:**
 
@@ -3891,7 +3891,7 @@ FOR account IN student\_accounts\
     RETURN {\
       "name": student.name,\
       "balance": account.balance\
-    }\
+    }
 
 **Объяснение:**
 
@@ -3939,7 +3939,7 @@ FOR student IN students\
       RETURN {\
         "title": class.title,\
         "time": class.time\
-      }\
+      }
 
 **Объяснение:**
 
@@ -3992,7 +3992,7 @@ intern.students\_applied\
 RETURN {\
   "name": "Владислав Михайлов",\
   "applied\_to\_TechCorp": internship != null\
-}\
+}
 
 **Объяснение:**
 
@@ -4043,7 +4043,7 @@ FOR student IN students\
     RETURN {\
       "exchange\_id": exchange.exchange\_id,\
       "language\_to\_learn": exchange.language\
-    }\
+    }
 
 **Объяснение:**
 
@@ -4095,7 +4095,7 @@ enrollmentYear\
   RETURN {\
     "name": student.name,\
     "received\_aid\_in\_enrollment\_year": aid != null\
-  }\
+  }
 
 **Объяснение:**
 
@@ -4136,7 +4136,7 @@ enrollmentYear\
 **Задание:**
 
 
-Получить в хост-подсистеме и выдать на экран** **названия дипломных
+Получить в хост-подсистеме и выдать на экран названия дипломных
 работ студентов, которые выпускаются в текущем году (передается в
 запросе из хост-подсистемы)?
 
@@ -4151,7 +4151,7 @@ FOR student IN students\
     RETURN {\
       "student\_name": student.name,\
       "thesis\_title": thesis.title\
-    }\
+    }
 
 **Объяснение:**
 
@@ -4202,7 +4202,7 @@ FOR student IN students\
     RETURN {\
       "scholarship\_name": scholarship.name,\
       "amount": scholarship.amount\
-    }\
+    }
 
 **Объяснение:**
 
@@ -4250,7 +4250,7 @@ FOR student IN students\
   FOR course IN advanced\_courses\
     FILTER EVERY prereq IN course.prerequisites\
       SATISFIES prereq IN completed\
-    RETURN course.title\
+    RETURN course.title
 
 **Объяснение:**
 
@@ -4297,7 +4297,7 @@ FOR student IN students\
   FILTER student.name == "Анна Романова"\
   FOR event IN cultural\_events\
     FILTER event.country == student.nationality\
-    RETURN event.name\
+    RETURN event.name
 
 **Объяснение:**
 
@@ -4343,7 +4343,7 @@ FOR student IN students\
     RETURN {\
       "student\_name": student.name,\
       "eligible": eligible\
-    }\
+    }
 
 **Объяснение:**
 
@@ -4392,7 +4392,7 @@ FOR student IN students\
         "course\_id": exam.course\_id,\
         "date": exam.date,\
         "location": exam.location\
-      }\
+      }
 
 **Объяснение:**
 
@@ -4439,7 +4439,7 @@ FOR student IN students\
   FOR team IN project\_teams\
     FILTER EVERY skill IN team.required\_skills\
       SATISFIES skill IN studentSkills\
-    RETURN team.project\_name\
+    RETURN team.project\_name
 
 **Объяснение:**
 
@@ -4488,7 +4488,7 @@ FOR student IN students\
       "student\_name": student.name,\
       "advisor\_name": advisor.name,\
       "department": advisor.department\
-    }\
+    }
 
 **Объяснение:**
 
@@ -4535,7 +4535,7 @@ FOR student IN students\
     RETURN {\
       "workshop\_topic": workshop.topic,\
       "date": workshop.date\
-    }\
+    }
 
 **Объяснение:**
 
@@ -4578,7 +4578,7 @@ FOR student IN students\
   FILTER student.name == "Ольга Федорова"\
   FOR reward IN rewards\
     FILTER student.participation\_points &gt;= reward.required\_points\
-    RETURN reward.name\
+    RETURN reward.name
 
 **Объяснение:**
 
@@ -4625,7 +4625,7 @@ FOR mentor IN mentors\
   RETURN {\
     "mentor\_name": mentor.name,\
     "student\_count": studentCount\
-  }\
+  }
 
 **Объяснение:**
 
@@ -4675,7 +4675,7 @@ FOR student IN students\
   FILTER student.name == "Кирилл Зайцев"\
   FOR campaign IN email\_campaigns\
     FILTER campaign.type IN student.email\_preferences\
-    RETURN campaign.subject\
+    RETURN campaign.subject
 
 **Объяснение:**
 
@@ -4722,7 +4722,7 @@ student.transportation\_mode == "Car"\
     RETURN {\
       "student\_name": student.name,\
       "needs\_new\_permit": true\
-    }\
+    }
 
 **Объяснение:**
 
