@@ -28,3 +28,68 @@
 <a href="https://github.com/alexbmstu/2023/blob/master/docs/pr2023.pdf" target="_blank">Вступительная презентация</a>
 
 
+## *Результаты практикума*
+
+
+**Beauty-guitar-music**
+
+<audio controls>
+  <source src="data/Beauty-guitar-music.mp3 " type="audio/wav">
+</audio>
+
+**D_major_hopeful_orchestra**
+
+
+<audio controls>
+  <source src="data/D_major_hopeful_orchestra.mp3 " type="audio/wav">
+</audio>
+
+**Мелодия**
+
+<audio controls>
+  <source src="data/random_L5_15.01.2025-10_58_07_G#_minor_r16.9.mp3 " type="audio/wav">
+</audio>
+
+**Мелодия 2**
+
+<audio controls>
+  <source src="data/random_L5_26_12_2024_224507_F#_major_r14_6_origin_Уходящая_в_Эдем.mp3 " type="audio/wav">
+</audio>
+
+**Бауманская соната**
+
+<audio controls>
+  <source src="data/Бауманская соната.mp3 " type="audio/wav">
+</audio>
+
+**Дирижер-Нарушитель**
+
+<audio controls>
+  <source src="data/Дирижер-Нарушитель.mp3 " type="audio/wav">
+</audio>
+
+**Инвенции_Баха_В_Блендере**
+
+<audio controls>
+  <source src="data/Инвенции_Баха_В_Блендере.mp3 " type="audio/wav">
+</audio>
+
+**Лезгинка Печёнкина**
+
+<audio controls>
+  <source src="data/Лезгинка Печёнкина.mp3 " type="audio/wav">
+</audio>
+
+**Предначертанная тишина**
+
+<audio controls>
+  <source src="data/Предначертанная тишина.mp3 " type="audio/wav">
+</audio>
+
+**Сияние**
+
+<audio controls>
+  <source src="data/сияние.mp3" type="audio/wav">
+</audio>
+
+
